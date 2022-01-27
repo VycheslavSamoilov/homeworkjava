@@ -27,8 +27,9 @@ public class HomeWork3 {
                 if (scanner.hasNextInt()) {
                     otv = scanner.nextInt();
                     System.out.println(" Вы ввели число " + otv);
-                    if (otv == 1 || otv == 2 || otv == 3) {
-                        continue;
+                    if (otv != 1 || otv != 2 || otv != 3) {
+                        System.out.println("Необходимо ввести цифру от 1 до 3 ");
+                        System.exit(1);
                     }
                 } else {
                     System.out.println("Извините, но это явно не число. Перезапустите программу и попробуйте снова!");
